@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" id="vZB-mQ-KRP" customClass="uploadCell" customModule="Smart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vZB-mQ-KRP" id="TNy-Xw-cKe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="상품명" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4qJ-Mm-h7o">
+                        <rect key="frame" x="10" y="0.0" width="300" height="43.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4qJ-Mm-h7o" secondAttribute="bottom" id="Bbp-Av-ciq"/>
+                    <constraint firstAttribute="trailing" secondItem="4qJ-Mm-h7o" secondAttribute="trailing" constant="10" id="aLp-6f-Qkh"/>
+                    <constraint firstItem="4qJ-Mm-h7o" firstAttribute="leading" secondItem="TNy-Xw-cKe" secondAttribute="leading" constant="10" id="dIE-XP-mP5"/>
+                    <constraint firstItem="4qJ-Mm-h7o" firstAttribute="top" secondItem="TNy-Xw-cKe" secondAttribute="top" id="yPV-tn-Hx5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleText" destination="4qJ-Mm-h7o" id="h4p-Jl-LHN"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="-63"/>
+        </tableViewCell>
+    </objects>
+</document>

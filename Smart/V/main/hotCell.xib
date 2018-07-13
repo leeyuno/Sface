@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Spoqa Han Sans Regular.ttf">
+            <string>SpoqaHanSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="hotCell" id="HMP-We-maT" customClass="hotCell" customModule="Smart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HMP-We-maT" id="zht-et-hTe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1ju-iQ-rOm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Y-Tz-zfv">
+                        <rect key="frame" x="10" y="5" width="100" height="15"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.467221687" blue="0.56685369919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-Zr-5UF">
+                        <rect key="frame" x="10" y="180" width="100" height="15"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p4Y-Tz-zfv" firstAttribute="leading" secondItem="zht-et-hTe" secondAttribute="leading" constant="10" id="0sR-6N-lob"/>
+                    <constraint firstAttribute="bottom" secondItem="1ju-iQ-rOm" secondAttribute="bottom" id="1pf-YL-0uk"/>
+                    <constraint firstItem="p4Y-Tz-zfv" firstAttribute="top" secondItem="zht-et-hTe" secondAttribute="top" constant="5" id="jDL-8X-qKO"/>
+                    <constraint firstItem="1lP-Zr-5UF" firstAttribute="leading" secondItem="zht-et-hTe" secondAttribute="leading" constant="10" id="k1o-Bd-MXF"/>
+                    <constraint firstItem="1ju-iQ-rOm" firstAttribute="top" secondItem="zht-et-hTe" secondAttribute="top" id="lf8-uS-EHw"/>
+                    <constraint firstItem="1ju-iQ-rOm" firstAttribute="leading" secondItem="zht-et-hTe" secondAttribute="leading" id="pA2-y2-Xs6"/>
+                    <constraint firstAttribute="bottom" secondItem="1lP-Zr-5UF" secondAttribute="bottom" constant="5" id="rFq-IJ-0Rt"/>
+                    <constraint firstAttribute="trailing" secondItem="1ju-iQ-rOm" secondAttribute="trailing" id="rQX-F1-h0j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hotImage" destination="1ju-iQ-rOm" id="mu7-KC-OEG"/>
+                <outlet property="hotPrice" destination="1lP-Zr-5UF" id="cB9-dk-f4q"/>
+                <outlet property="hotTime" destination="p4Y-Tz-zfv" id="6bV-KA-ucU"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="130"/>
+        </tableViewCell>
+    </objects>
+</document>

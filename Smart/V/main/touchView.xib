@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="touchView" customModule="Smart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfV-0K-hA0">
+                    <rect key="frame" x="100" y="140" width="120" height="120"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup" translatesAutoresizingMaskIntoConstraints="NO" id="MFN-Sr-ImC">
+                            <rect key="frame" x="20" y="20" width="80" height="80"/>
+                            <color key="backgroundColor" red="0.91949555839999997" green="0.91949555839999997" blue="0.91949555839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MFN-Sr-ImC" secondAttribute="height" multiplier="1:1" id="hmh-8J-Snj"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MFN-Sr-ImC" secondAttribute="trailing" constant="20" id="3LK-YV-vLR"/>
+                        <constraint firstAttribute="width" secondItem="PfV-0K-hA0" secondAttribute="height" multiplier="1:1" id="HBA-nL-g2Z"/>
+                        <constraint firstItem="MFN-Sr-ImC" firstAttribute="centerX" secondItem="PfV-0K-hA0" secondAttribute="centerX" id="TmM-bA-1Cm"/>
+                        <constraint firstItem="MFN-Sr-ImC" firstAttribute="centerY" secondItem="PfV-0K-hA0" secondAttribute="centerY" id="W3p-eZ-gdN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.91949555839999997" green="0.91949555839999997" blue="0.91949555839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PfV-0K-hA0" secondAttribute="trailing" constant="100" id="STB-Hh-gGt"/>
+                <constraint firstItem="PfV-0K-hA0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fMD-Nl-HXD"/>
+                <constraint firstItem="PfV-0K-hA0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xii-g7-vdD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="MFN-Sr-ImC" id="QPv-Fg-Zhq"/>
+                <outlet property="subView" destination="PfV-0K-hA0" id="pox-D7-tYJ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="startup" width="128" height="128"/>
+    </resources>
+</document>

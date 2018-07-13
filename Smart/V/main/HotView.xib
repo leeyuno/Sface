@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Spoqa Han Sans Regular.ttf">
+            <string>SpoqaHanSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HotView" customModule="Smart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="3Kn-Ne-sG3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhl-AF-vpu">
+                    <rect key="frame" x="5" y="5" width="71" height="17"/>
+                    <color key="backgroundColor" red="0.91949555839999997" green="0.91949555839999997" blue="0.91949555839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="YhF-lF-74D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.467221687" blue="0.56685369919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111,450,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsA-aZ-U7E">
+                    <rect key="frame" x="5" y="205" width="96" height="17"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" red="0.91949555839999997" green="0.91949555839999997" blue="0.91949555839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="9Jm-vQ-3ii"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zsA-aZ-U7E" secondAttribute="bottom" constant="5" id="44G-NB-I6Y"/>
+                <constraint firstItem="zsA-aZ-U7E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="4Ht-pr-WFO"/>
+                <constraint firstItem="Mhl-AF-vpu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="5XT-oV-oAW"/>
+                <constraint firstItem="3Kn-Ne-sG3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8bH-12-jpb"/>
+                <constraint firstItem="3Kn-Ne-sG3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CmS-ZT-y0s"/>
+                <constraint firstItem="3Kn-Ne-sG3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZPB-lj-xxW"/>
+                <constraint firstItem="Mhl-AF-vpu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="fhj-jR-2Au"/>
+                <constraint firstItem="3Kn-Ne-sG3" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="vWk-uJ-j8V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftTime" destination="Mhl-AF-vpu" id="R4M-80-zhr"/>
+                <outlet property="nowPrice" destination="zsA-aZ-U7E" id="ESC-Bh-Myr"/>
+                <outlet property="productImage" destination="3Kn-Ne-sG3" id="sG4-6L-VbT"/>
+                <outlet property="timeWidthCOnstraint" destination="YhF-lF-74D" id="XdB-OY-Ecf"/>
+                <outlet property="widthConstraint" destination="9Jm-vQ-3ii" id="S2P-mb-esN"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample" width="696" height="448"/>
+    </resources>
+</document>

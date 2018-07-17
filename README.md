@@ -1,3 +1,3 @@
 # Sface
 
-Action shopping app
+Auction shopping app
